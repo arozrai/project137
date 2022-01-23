@@ -3,7 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import {createAppContainer} from "react-navigation"
 import {createStackNavigator} from "react-navigation-stack"
 import HomeScreen from "./screens/home"
-import DetailsScreen from "./screens/details"
+import StarScreen from "./screens/star"
 
 export default function App() {
   return (
@@ -13,7 +13,7 @@ export default function App() {
 
 const StackNavigator = createStackNavigator({
   Home: {screen:HomeScreen, navigationOptions:{headerShown:false}},
-  Details: {screen:DetailsScreen}
+  Star: {screen:StarScreen, navigationOptions:{headerTitle:"",headerStyle:{backgroundColor:"#1A2D5F",borderWidth:0}}}
 },
 {
   initialRouteName:"Home"
